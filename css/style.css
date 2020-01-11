@@ -1,0 +1,13 @@
+header {
+  background-color: #f7e296;
+}
+.navigation-aux {
+  text-align: center;
+  font-size: 15px;
+  font-family: "open-sans";
+}
+.navigation__button {
+  background-color: #f7e296;
+  border-style: none;
+
+}
