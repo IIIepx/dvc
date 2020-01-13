@@ -1,17 +1,193 @@
-header {
+@font-face {
+  font-family: "Gilroy Extrabold";
+  src: url(../fonts/gilroyextrabold.woff2);
+}
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(../fonts/gilroylight.woff2);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/opensans.woff2);
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/opensanslight.woff2);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ffffff;
+  letter-spacing: 0.01em;
+}
+.button {
+  border: none;
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #ffffff;
+  padding-left: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.logo-main {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 48px;
+}
+.header-main {
   background-color: #f7e296;
 }
-.navigation-aux {
-  text-align: center;
-  font-size: 15px;
-  font-family: "open-sans";
-}
-nav ul{
+.header-main ul {
   list-style-type: none;
-  
 }
 .navigation__button {
+  border: none;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   background-color: #f7e296;
-  border-style: none;
-
+  padding-left: 0;
+  letter-spacing: normal;
+}
+.navigation-aux a{
+  text-decoration: none;
+  color: #000000;
+}
+.navigation-catalog__button {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.navigation-main a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.offer__title {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 47px;
+  line-height: 56px;
+}
+.offer__link {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.offer__feautures th {
+  font-family: "Open Sans Light","Arial",sans;
+  font-size: 13px;
+  line-height: 20px;
+}
+.offer__feautures td {
+  font-family: "Gilroy Light","Arial",sans;
+  font-size: 36px;
+  line-height: 48px;
+}
+.offer ul {
+  list-style-type: none;
+}
+.offer a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 18px;
+  line-height: 24px;
+}
+.slider-button {
+  border-color: #000000;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 18px;
+}
+.services ul {
+  list-style-type: none;
+}
+.service-name {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 47px;
+}
+.brends ul {
+  list-style-type: none;
+}
+.about-us h2 {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 47px;
+  line-height: 48px;
+}
+.about-us ul {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 16px;
+  line-height: 40px;
+}
+.about-us button {
+  letter-spacing: 3.6px;
+}
+.contacts h2 {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 47px;
+  line-height: 48px;
+}
+.contacts ul {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 16px;
+  line-height: 40px;
+}
+.contacts button {
+  letter-spacing: 0.2em;
+}
+.footer-main {
+  background-color: #464646;
+  color: #ffffff;
+}
+.footer-main ul {
+  list-style-type: none;
+}
+.logo-footer {
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 48px;
+  color: #ffc600;
+  letter-spacing: 0.01em;
+}
+.compare-footer__button {
+  background-color: #464646;
+  color: #ffffff
+}
+.catalog-footer__button {
+  background-color: #464646;
+  color: #ffffff
+}
+.navigation-aux-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.navigation-main-footer a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Gilroy Extrabold","Arial",sans;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
