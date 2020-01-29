@@ -12,16 +12,16 @@
   <header class="header-main container">
     <h1 class="logo-main">Device</h1>
     <div class="main-navigation-wrapper">
-      <nav class="navigation-aux">
+      <nav class="navigation-user">
         <ul>
           <li>
-            <button class="navigation__button navigation-seek__button" type="button" name="seek-button">Поиск по сайту</button>
+            <input class="navigation__button navigation-seek__button" type="button" name="seek-button"> Поиск по сайту</input>
           </li>
           <li>
             <a class="naigation-login" href="login.html">Войти</a>
           </li>
           <li>
-            <button class="navigation__button navigation-compare__button" type="button" name="compare-button">Сравнить</button>
+            <input class="navigation__button navigation-compare__button" type="button" name="compare-button">Сравнить</input>
           </li>
           <li>
             <a class="navigation-busket" href="busket.html" >Корзина</a>
@@ -31,7 +31,7 @@
       <nav class="site-navigation">
         <ul>
           <li>
-            <button class="navigation__button navigation-catalog__button" type="button" name="catalog-button">Каталог товаров</button>
+            <input class="navigation-catalog__button" type="button" name="catalog-button" value="Каталог товаров"></input>
           </li>
           <li>
             <a class="navigation-delivery" href="delivery.html">Доставка</a>
@@ -135,9 +135,9 @@
     <h2 class="visually-hidden">Услуги</h2>
     <div class="cervices__wrapper container">
       <ul class="services__button">
-        <li><button class="button" type="button" name="delivery">Доставка</button></li>
-        <li><button class="button" type="button" name="warranty">Гарантия</button></li>
-        <li><button class="button" type="button" name="credit">Кредит</button></li>
+        <li><input class="button" type="button" name="delivery" value="Доставка"></button></li>
+        <li><input class="button" type="button" name="warranty" value="Гарантия"></button></li>
+        <li><input class="button" type="button" name="credit" value="Кредит"></button></li>
       </ul>
       <div class="service-description__wrapper">
         <div class="cervice-description__item">
@@ -159,10 +159,11 @@
         </div>
       </div>
     </div>
+    <div class="services__background"></div>
   </section>
 
-  <section class="brends">
-    <ul>
+  <section class="brends container">
+    <ul class="brends__list">
       <li class="brend-item"><img src="img\logo-1.png" width="260" height="100" alt="" ></li>
       <li class="brend-item"><img src="img\logo-2.png" width="260" height="100" alt="" ></li>
       <li class="brend-item"><img src="img\logo-3.png" width="260" height="100" alt="" ></li>
@@ -170,6 +171,7 @@
     </ul>
   </section>
 
+  <div class="firm-info__wrapper container">
   <section class="about-us">
     <h2>О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -179,54 +181,59 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <button class="button" type="button" name="about">Подробнее о нас</button>
+    <input class="button" type="button" name="about" value="Подробнее о нас"></button>
   </section>
 
   <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
     <img src="img\map.png" width="560" height="222" alt="г. Москва, ул. Строителей 15">
-    <button class="button" type="button" name="write-us">Напишите нам</button>
+    <input class="button" type="button" name="write-us" value="Напишите нам"></button>
   </section>
+  </div>
 
   <footer class="footer-main">
-    <h2 class="logo-footer">DEVICE</h2>
-    <nav class="navigation-aux-footer">
-      <ul>
-        <li>
-          <a class="naigation-login" href="login.html">Вход</a>
-        </li>
-        <li>
-          <button class="navigation__button compare-footer__button navigation-compare__button" type="button" name="compare-button">Сравнить</button>
-        </li>
-        <li>
-          <a class="navigation-busket" href="busket.html" >Корзина</a>
-        </li>
+    <div class="footer__wrapper container">
+      <div class="footer-navigation-user_wrapper">
+        <h2 class="logo-footer">DEVICE</h2>
+        <nav class="navigation-user-footer">
+          <ul class="navigation-user-footer__list">
+            <li>
+              <a class="naigation-login" href="login.html">Войти</a>
+            </li>
+            <li>
+              <input class="navigation__button compare-footer__button navigation-compare__button" type="button" name="compare-button" value="Сравнить"></button>
+            </li>
+            <li>
+              <a class="navigation-busket" href="busket.html" >Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="site-navigation-footer">
+        <ul class="site-navigation-footer__list">
+          <li>
+            <a class="navigation-delivery" href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a class="navigation-warranty" href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a class="navigation-contacts" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-contacts__wrapper">
+        <p class="footer-contacts_left">г. Москва, ул. Строителей 15</p>
+        <p class="footer-contacts_right">Тел.: +7(495) 495-95-95</p>
+      </div>
+      <ul class="social">
+        <li><a href="#"><img src="img/fb.svg" alt="facebook"></a></li>
+        <li><a href="#"><img src="img/insta.svg" alt="instagram"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
       </ul>
-    </nav>
-    <nav class="site-navigation-footer">
-      <ul class="site-navigation-footer">
-        <li>
-          <button class="navigation__button catalog-footer__button navigation-catalog__button" type="button" name="catalog-button">Каталог товаров</button>
-        </li>
-        <li>
-          <a class="navigation-delivery" href="delivery.html">Доставка</a>
-        </li>
-        <li>
-          <a class="navigation-warranty" href="warranty.html">Гарантия</a>
-        </li>
-        <li>
-          <a class="navigation-contacts" href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <p>г. Москва, ул. Строителей 15<span class="footer-contacts_right">Тел.: +7 (495) 495-95-95</span>></p>
-    <ul class="social">
-      <li><a href="#"><img src="img\fb.svg" alt="facebook"></a></li>
-      <li><a href="#"><img src="img\insta.svg" alt="instagram"></a></li>
-      <li><a href="#"><img src="img\twitter.svg" alt="twitter"></a></li>
-    </ul>
-    <a class="htmlacademy-link" href="http://htmlacademy.ru">htmlacademy</a>
+      <a class="htmlacademy-link" href="http://htmlacademy.ru">htmlacademy</a>
+    </div>
   </footer>
 </body>
 </html>
